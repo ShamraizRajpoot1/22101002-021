@@ -3,11 +3,19 @@
 
 <head>
     <title>Shamraiz Cv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             background-color: #f4f4f4;
         }
-
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
         .container {
             width: 50%;
             margin: 0 auto;
@@ -25,6 +33,7 @@
             background-color: #fff;
             padding: 20px;
             margin-top: 30px;
+            margin-bottom: 100px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -55,21 +64,50 @@
 
         img {
             max-width: 20%;
-           
             margin-top: 20px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer .icons a {
+            color: #333;
+            margin: 0 5px;
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .container, .cv-container {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container, .cv-container {
+                width: 100%;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <header class="header">
         <h1>MUHAMMAD SHAMRAIZ IQBAL</h1>
+    </header>
+
+    <div class="container">
         <p>I am a student of BS-CS at USKT. I am a react native developer.</p>
 
         <h2>Hobbies</h2>
         <ol>
             <li>Programming</li>
-            <li> Outing </li>
+            <li>Outing</li>
             <li>Playing and watching Cricket</li>
             <li>Football</li>
             <li>Watching Movies</li>
@@ -89,24 +127,24 @@
         <h2>CV</h2>
         <img src="https://firebasestorage.googleapis.com/v0/b/sneakerlog-c74f6.appspot.com/o/Users%2FIMG_20230125_200428_877.jpg?alt=media&token=ee144dcc-abc2-4094-9939-a172d693933a&_gl=1*1cwendh*_ga*MTY4MTc4NzIxOS4xNjg4MzgxOTgx*_ga_CW55HF8NVT*MTY5Nzg4MTAxMy4xMjAuMS4xNjk3ODg2NjA5LjMzLjAuMA.." alt="Profile Picture">
         <h3>MUHAMMAD SHAMRAIZ IQBAL</h3>
-        <p> sshamraiz4@gmail.com</p>
+        <p>sshamaiz4@gmail.com</p>
 
         <h3>Education</h3>
         <table>
             <tr>
-		<th></th>
+                <th>#</th>
                 <th>Degree</th>
                 <th>Year</th>
                 <th>Institution</th>
             </tr>
-            <tr>	
-		<th>#1</th>
+            <tr>
+                <td>1</td>
                 <td>ADP-CS</td>
                 <td>2022</td>
                 <td>USKT</td>
             </tr>
             <tr>
-		<th>#2</th>
+                <td>2</td>
                 <td>I-C-S</td>
                 <td>2019</td>
                 <td>Govt. College Pasrur</td>
@@ -118,11 +156,11 @@
             <li>React Native</li>
             <li>React Js</li>
             <li>Android</li>
-	    <li>JavaScript</li>
-	    <li>Firebase</li>
-	    <li>Node js</li>
-	    <li>MongoDB</li>
-	    <li>My Sql</li>
+            <li>JavaScript</li>
+            <li>Firebase</li>
+            <li>Node js</li>
+            <li>MongoDB</li>
+            <li>My Sql</li>
         </ul>
 
         <h3>List of Projects</h3>
@@ -130,13 +168,13 @@
             <li>Oyl</li>
             <li>Just Talk</li>
             <li>SneakerLog</li>
-	    <li>Railway Appartment Allocation</li>
+            <li>Railway Appartment Allocation</li>
         </ul>
 
         <h3>Hobbies</h3>
         <ol>
             <li>Programming</li>
-            <li> Outing </li>
+            <li>Outing</li>
             <li>Playing and watching Cricket</li>
             <li>Football</li>
             <li>Watching Movies</li>
@@ -146,11 +184,23 @@
         <p>Full Stack Developer</p>
 
         <h3>What You Did for Your Country</h3>
-        <p>I have not do anything yet but i want to do something better</p>
+        <p>I have not done anything yet but I want to do something better.</p>
 
         <h3>What You Want to Do for Your Country</h3>
         <p>Top Rated Freelancer</p>
     </div>
+
+    <footer class="footer">
+        <p>MUHAMMAD SHAMRAIZ IQBAL</p>
+        <p>sshamaiz4@gmail.com</p>
+        <div class="icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
 </body>
 
 </html>
